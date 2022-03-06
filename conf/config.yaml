@@ -1,0 +1,40 @@
+mode: parallel
+containers:
+  - address: http://192.168.2.208:2222
+    username: admin
+    password: admin
+    cid: v5ptoT-MrjDS
+    secret: BI6D72P_ARVRWR61RKp3cb_h
+    weigth: 1
+    mode: parallel
+    limit: 9999
+AtTime: 9 #填写1-12之间的数  填错自负默认为10  10点容易出现高峰超时。
+IsHelp: true #填写true或者false  false
+IsOldV4: #填写true或者false  false是否新版或者旧版V4
+Wskey: # 填空默认禁用wskey转换 需要的填true
+IsAddFriend: true #填写true或者false
+Lim: 5 #填写1-N 代表限制次数
+Tyt: 4 #填写1-N 代表推一推需要的互助值，默认为8
+Later: #延时防止黑IP自己设置 默认60 不怕黑的改为1即可 单位是秒
+ApiToken: #短信接入token参数
+theme:  
+static: ./static
+master: admin!
+Jdcurl: http://192.168.2.209:5701
+ApiToken: 123456
+database:  
+qywx_key:
+daily_push:
+resident:
+user_agent:
+telegram_bot_token:
+telegram_user_id:
+TGURL: #填写TG代理地址参考https://www.kejiwanjia.com/server/5221.html#3worker
+qquid: 2507803982
+qqgid: 552372257
+qbot_public_mode: false
+default_priority:
+no_ghproxy: true
+daily_asset_push_cron:
+repos:
+  - git: https://github.com/shufflewzc/faker2.git
